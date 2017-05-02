@@ -1,12 +1,15 @@
 $(document).ready(function(){
 
-
-// ============ PreventDefault for a href ============
+/**
+ * PreventDefault for a href 
+ */
     $(".btn").on("click","a", function (event) {
         event.preventDefault();
     });
-    	
-// ============== //delete placeholder================
+
+/**
+ * delete placeholder
+ */  	
     $('input').focus(function(){
         $(this).data('placeholder',$(this).attr('placeholder'))
         $(this).attr('placeholder','');
@@ -15,7 +18,9 @@ $(document).ready(function(){
         $(this).attr('placeholder',$(this).data('placeholder'));
     });
 
-// ============== //Form validate (https://jqueryvalidation.org/documentation/)================
+/**
+ * Form validate (https://jqueryvalidation.org/documentation/)
+ */
     $("#js-register-form").validate({
         rules:{
             name:{
