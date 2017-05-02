@@ -1,0 +1,535 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+input:required:invalid, input:focus:invalid {
+  box-shadow: none;
+}
+input:focus{
+   box-shadow: none; 
+}
+input {
+    outline: none;
+    }
+body {
+    line-height: 1;
+    margin: 0 auto; 
+}
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a, a:focus, a:link, a:visited, a:active, button{
+    outline: none;
+    text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+.clearfix {
+    clear: both;
+}
+/*=========== @font-face =====================*/
+@font-face {
+	font-family: 'Amaranth-Bold';
+	src: url('fonts/Amaranth-Bold.eot');
+	src: url('fonts/Amaranth-Bold.woff') format('woff'), url('fonts/Amaranth-Bold.ttf') format('truetype'), url('fonts/Amaranth-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Amaranth-Regular';
+	src: url('fonts/Amaranth-Regular.eot');
+	src: url('fonts/Amaranth-Regular.woff') format('woff'), url('fonts/Amaranth-Regular.ttf') format('truetype'), url('fonts/Amaranth-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Amaranth-Italic';
+	src: url('fonts/Amaranth-Italic.eot');
+	src: url('fonts/Amaranth-Italic.woff') format('woff'), url('fonts/Amaranth-Italic.ttf') format('truetype'), url('fonts/Amaranth-Italic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Amaranth-BoldItalic';
+	src: url('fonts/Amaranth-BoldItalic.eot');
+	src: url('fonts/Amaranth-BoldItalic.woff') format('woff'), url('fonts/Amaranth-BoldItalic.ttf') format('truetype'), url('fonts/Amaranth-BoldItalic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT_Sans-Web-Regular';
+	src: url('fonts/PT_Sans-Web-Regular.eot');
+	src: url('fonts/PT_Sans-Web-Regular.woff') format('woff'), url('fonts/PT_Sans-Web-Regular.ttf') format('truetype'), url('fonts/PT_Sans-Web-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT_Sans-Bold';
+	src: url('fonts/PTS75F.eot');
+	src: url('fonts/PTS75F.woff') format('woff'), url('fonts/PTS75F.ttf') format('truetype'), url('fonts/PTS75F.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*==========================================*/
+body{
+    font-family: 'PT_Sans-Web-Regular', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #737373;
+    background-color: #f1f5e4;
+}
+.wrapper{
+    width: 100%;
+    height: auto;
+}
+.headerWrap{
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 2px solid #f79752;
+}
+h2{
+    font-family: 'Amaranth-Bold';
+    font-size: 41px;
+    color: #ff6110;
+}
+.btn, input.btn{
+    font-family: 'Amaranth-Bold';
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    background-color: #1861c3;
+    border: 1px solid #1861c3;
+    border-radius: 8px;
+    padding: 8px 25px 2px;
+    cursor: pointer;
+    text-shadow: 2px 0px 2px #584f4f;
+    -webkit-box-shadow: 0px 1px 1px 0 rgba(105,90,90,0.5);
+    -moz-box-shadow: 0px 1px 1px 0px rgba(105,90,90,0.5);
+    box-shadow: 0px 1px 1px 0px rgba(105,90,90,0.5);
+    background-image: -ms-linear-gradient(top, #4882CF 0%, #1861C3 100%);
+    background-image: -moz-linear-gradient(top, #4882CF 0%, #1861C3 100%);
+    background-image: -o-linear-gradient(top, #4882CF 0%, #1861C3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4882CF), color-stop(100, #1861C3));
+    background-image: -webkit-linear-gradient(top, #4882CF 0%, #1861C3 100%);
+    background-image: linear-gradient(to bottom, #4882CF 0%, #1861C3 100%);
+}
+/*============== Header ============================*/
+header{
+    width: 1000px;
+    height: 96px;
+    margin: 0 auto;
+}
+.logo {
+    position: relative;
+}
+.logo img{
+    padding-top:15px;
+}
+.logo span{ 
+    font-family: 'PT_Sans-Bold';
+    font-size: 14px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 60px;
+    left: 105px;
+}
+/*============= Main ==================================*/
+.mainWrap{
+    width: 1400px;
+    margin: 0 auto;
+    background-image: url(../i/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.main_container{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0px;
+}
+.orderContainer{
+    position: relative;
+    margin-top: -1px;
+}
+.orderBg{
+    width: 1022px;
+    height: 132px;
+    margin: 0 0 0 -11px ;
+    background-image: url(../i/bgBlock.jpg);
+    background-size: 100%;
+    position: relative;
+}
+.orderАfter, .orderBefore{
+    position: absolute;
+    width: 101px;
+    height: 132px;
+}
+.orderBefore{
+    background-image: url(../i/bgBlock_left.png);
+    background-size: 100%;
+    left: -62px;
+    top: 11px;
+}
+ .orderАfter{
+    background-image: url(../i/bgBlock_right.png);
+    background-size: 100%;
+    right: -62px;
+    top: 11px;
+}
+.woman, .bottle, .contactForm, .secured{
+    display: inline-block;
+}
+.woman{
+    padding: 30px 0 0 128px;
+    width: 300px;
+}
+.bottle{
+    position: absolute;
+    top: -26px;
+    margin-left: -21px;
+    z-index: 2;
+}
+.contactForm{
+    position: absolute;
+    width: 335px;
+    height: 360px;
+    background-color: #f6f8fb;
+    right: 0;
+    top: 20px;
+    z-index: 2;
+    border-radius: 10px;
+}
+form{
+    position: absolute;
+    width: 260px;
+    z-index: 2;
+    top: 29px;
+    right: 18px;
+}
+input.error{
+    border-color: #ff6110;
+}
+label.error{
+    font-size: 12px;
+    position: absolute;
+    width: 200px;
+    left: 0px;
+    padding: 0px;
+    margin-top: 29px;
+    color: red;
+    margin-left: 5px;
+}
+legend{
+    font-family: 'Amaranth-Bold';
+    font-size: 30px;
+    color: #ff6110;
+    padding: 15px 0 10px;
+}
+input{
+    width: 258px;
+    height: 30px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #666666;
+  font-family: 'PT_Sans-Web-Regular';
+  font-size: 14px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #666666;
+  font-family: 'PT_Sans-Web-Regular';
+  font-size: 14px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #666666;
+  font-family: 'PT_Sans-Web-Regular';
+  font-size: 14px;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #666666;
+  font-family: 'PT_Sans-Web-Regular';
+  font-size: 14px;
+}
+input[type="submit"] {
+    height: 38px;
+    font-size: 29px;
+    border-color: #1861c3;
+    padding: 6px;
+}
+.prise{
+    position: absolute;
+    width: 415px;
+    top: 18px;
+    z-index: 1;
+}
+.prise p{
+    font-family: 'Amaranth-Bold';
+    font-size: 36px;
+    line-height: .87;
+    text-align: right;
+    color: #fff;
+    text-transform: uppercase;
+}   
+.prise p:last-child{
+    font-size: 90px;
+}
+.secured{
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+    font-family: 'Amaranth-Bold';
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 1;
+}
+.secured div{
+    display: inline-block;
+}
+.secured img{
+    float: left;
+    margin-right: 8px;
+}
+.secured p{
+    line-height: .85;
+}  
+/*============= section =====================*/
+section{
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    box-sizing: border-box;
+}
+.row{
+    position: relative;
+    padding: 0px 20px;
+}
+.moneyBack{
+    padding: 10px 20px 20px 20px;
+}
+.moneyBack div{
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.moneyImg{
+    width: 200px;
+}
+.moneyText{
+    width: 760px;
+}
+.moneyBack p{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 15px;
+    padding-right: 50px;
+    line-height: 1.2;  
+}
+.features{
+    height: 118px;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0px;
+}
+.features .colorDiv{
+    position: relative;   
+    border: 59px solid transparent;
+    width: 250px;
+    box-sizing: border-box
+}
+.features .colorDiv:first-child{
+    border:0;
+    background-color: #1660c3;
+}
+.features .colorDiv:nth-child(2){
+    background-color: #256dce;
+    border-left: 36px solid #1660c3;
+}
+.features .colorDiv:nth-child(3){
+    background-color: #357fe4;
+    border-left: 36px solid #256dce;
+}
+.features .colorDiv:nth-child(4){
+    background-color: #4891f4;
+    border-left: 36px solid #357fe4;
+}
+.features .colorDiv div{
+    position: absolute;
+    width: 220px;
+    top: -34px;
+    left: 15px;
+    z-index: 2;
+}
+.features .colorDiv:first-child div{
+    top: 21px;
+    left: 20px;
+}
+.features .colorDiv:nth-child(4) div{
+    width: 175px;
+}
+.features h4{
+    font-family: 'Amaranth-Bold';
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;   
+}
+.features h4 span{
+    text-transform: capitalize;
+}
+.features p{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 14px;
+    color: #fff;   
+}
+.banner {
+    top: 0;
+    right: 20px;
+    position: absolute;  
+    padding: 20px 0 20px 20px;  
+}
+.banner div{
+    position: absolute;
+    top: 35px;
+    width: 200px;
+    left: 46px;
+    text-align: center;
+}
+.banner div p{
+    font-family: 'Amaranth-Bold';
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff; 
+}
+.banner div p:nth-child(2){
+    font-size: 70px;
+    
+}
+.banner div p:nth-child(3){
+    font-size: 36px;
+    line-height: .3;
+}
+.banner .btn{
+    width: 220px;
+    font-size: 26px;
+    padding: 8px 11px 2px;
+    background-color: #ff6110;
+    border: 1px solid #ff6110;
+    position: relative;
+    margin-left: -7px;
+    margin-top: 3px;
+    background-image: -ms-linear-gradient(top, #ff8242 0%, #FF6110 100%);
+    background-image: -moz-linear-gradient(top, #ff8242 0%, #FF6110 100%);
+    background-image: -o-linear-gradient(top, #ff8242 0%, #FF6110 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff8242), color-stop(100, #FF6110));
+    background-image: -webkit-linear-gradient(top, #ff8242 0%, #FF6110 100%);
+    background-image: linear-gradient(to bottom, #ff8242 0%, #FF6110 100%);
+    }
+article{
+    display: inline-block;
+    width: 685px;
+    padding: 20px 0 0;
+    position: relative;
+}
+.articaleImg{
+    width: 96px;
+    height: 96px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.articaleImg img{
+    width: 100%;
+    height: auto;
+}
+.articaleText{
+    padding: 10px 0 25px 15px;
+    border-bottom: 2px dotted #d7d7d6;
+}
+article h4{
+    font-family: 'Amaranth-Bold';
+    font-size: 26px;
+    color: #1660c3;
+    margin-bottom: 3px;
+}
+article p{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 15px;
+    line-height: 1.2;
+}
+article:nth-child(even) .articaleImg{
+    float: right;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+.bottomCall{
+    text-align: center;
+    padding: 24px 45px 0;
+}
+.bottomCall p{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 15px;
+    line-height: 1.2;
+    margin-top: 2px;
+}
+.btnLine{
+    padding: 10px 0 25px;
+}
+/*======= footer ==================*/
+footer{
+    padding: 20px 0 75px;
+}
+footer ul{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 13px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+}
+footer ul li a{
+    color: #9a9a9a;
+}
+footer ul span{
+    margin: 0 10px;
+}
+footer p{
+    font-family: 'PT_Sans-Web-Regular';
+    font-size: 13px;
+    color: #9a9a9a;
+    text-align: center;
+    margin-top: 2px;
+}
+
+
+/*========== BG width ======================*/
+.header, .mainWrap{
+    width: 1400px;
+    margin: 0 auto;
+}
